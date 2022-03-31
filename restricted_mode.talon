@@ -2,17 +2,21 @@ mode: sleep
 
 -
 
-^listen <phrase>: 
+^command <phrase>: 
+
     mode.enable('command')
     mode.disable('sleep')
     mimic("{phrase}")
     mode.disable('command')
-    mode.enable('user.permitted_commands')
+    mode.enable('sleep')
 
-^dictate <phrase>: 
+^write <phrase>: 
     mode.enable('dictation')
     mode.disable('sleep')
     mimic("{phrase}")
     mode.disable('dictation')
     mode.enable('sleep')
+
+
+
 
