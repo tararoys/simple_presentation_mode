@@ -1,4 +1,13 @@
 mode: sleep
-mode: dictation
+
 -
 ^listen <phrase>$: user.momentary()
+
+<phrase>:skip()
+
+
+
+
+
+
+
